@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>制作者栏 ｜ 梦限大MewType 应援站</title>
+    <meta name="description" content="本站制作者信息、制作工具与素材来源、版权声明。" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a class="brand" href="https://bang-dream.com/artist/yumemita/" target="_blank"
+           rel="noopener noreferrer" data-tip="跳转梦限大官方网站"
+           title="跳转梦限大官方网站" aria-label="跳转梦限大官方网站（新窗口打开）">
+          <img class="brand__logo" src="assets/img/brand/logo-mewtype.png"
+               alt="夢限大みゅーたいぷ 官方 LOGO" width="760" height="274" />
+        </a>
+        <nav class="nav" id="siteNav" aria-label="主导航">
+          <a class="nav__link" href="index.html">首页<span>HOME</span></a>
+          <a class="nav__link" href="review.html">感想<span>REVIEW</span></a>
+          <a class="nav__link" href="story.html">剧情<span>STORY</span></a>
+          <a class="nav__link" href="songs.html">歌曲<span>SONG</span></a>
+          <a class="nav__link" href="characters.html">人物<span>MEMBER</span></a>
+          <a class="nav__link" href="live.html">活动<span>LIVE</span></a>
+          <a class="nav__link is-active" href="credits.html" aria-current="page">制作者<span>CREDIT</span></a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__bg" aria-hidden="true">
+          <img src="assets/img/hero/kv-01.jpg" alt="" width="1200" height="1750" />
+        </div>
+        <div class="wrap">
+          <nav class="breadcrumb" aria-label="面包屑导航">
+            <a href="index.html">首页</a><span>/</span>制作者栏
+          </nav>
+          <span class="en">CREDIT</span>
+          <h1>关于这个网站</h1>
+        </div>
+      </section>
+
+      <!-- 制作者信息 -->
+      <section class="section">
+        <div class="wrap">
+          <div class="creator-card creator-card--plain" data-reveal>
+            <div>
+              <p class="kicker" style="margin-bottom: 10px">Web designer / Student</p>
+              <h2>制作者：雷家俊</h2>
+              <dl>
+                <div>
+                  <dt>班级</dt>
+                  <dd>计算机类 2609 班</dd>
+                </div>
+                <div>
+                  <dt>学院</dt>
+                  <dd>计算机科学与技术学院</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 用了什么做 -->
+      <section class="section" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Tools</p>
+              <h2>用了什么做</h2>
+            </div>
+          </div>
+          <div class="table-wrap" data-reveal>
+            <table class="data">
+              <thead>
+                <tr>
+                  <th scope="col">环节</th>
+                  <th scope="col">工具 / 说明</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">内容与策划</th>
+                  <td>由我完成：定选题、排定 7 个页面的内容与顺序、挑选素材、决定每一处文案的取舍</td>
+                </tr>
+                <tr>
+                  <th scope="row">AI 协作</th>
+                  <td>使用 <strong>DeepSeek-V4.1-Flash</strong> 辅助创作</td>
+                </tr>
+                <tr>
+                  <th scope="row">页面代码</th>
+                  <td>纯 HTML5 + CSS3 + 原生 JavaScript，无框架、无构建步骤、无 CDN 依赖</td>
+                </tr>
+                <tr>
+                  <th scope="row">版式参考</th>
+                  <td>BanG Dream! 官方艺人页 <span style="color: var(--muted)">bang-dream.com/artist/yumemita</span> 的版式语言</td>
+                </tr>
+                <tr>
+                  <th scope="row">图片处理</th>
+                  <td>Python + Pillow：批量裁切、缩放、转码、透明立绘抠像</td>
+                </tr>
+                <tr>
+                  <th scope="row">字体处理</th>
+                  <td>fonttools + Brotli：思源黑体按全站用字做子集化，输出 woff2</td>
+                </tr>
+                <tr>
+                  <th scope="row">素材搜集</th>
+                  <td>BanG Dream! 官网、动画官网、官方 Discography</td>
+                </tr>
+                <tr>
+                  <th scope="row">预览与测试</th>
+                  <td>本地 HTTP 服务 + 浏览器无头截图，检查响应式与链接</td>
+                </tr>
+                <tr>
+                  <th scope="row">发布</th>
+                  <td>GitHub Pages</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 素材来源 -->
+      <section class="section" id="sources" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Sources &amp; credits</p>
+              <h2>素材来源与版权</h2>
+              <p>本站为课程作业，所有素材仅用于学习与展示，不作任何商业用途。</p>
+            </div>
+          </div>
+
+          <div class="table-wrap" data-reveal>
+            <table class="data">
+              <thead>
+                <tr>
+                  <th scope="col">类型</th>
+                  <th scope="col">来源</th>
+                  <th scope="col">使用范围</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">角色立绘 / 主视觉</th>
+                  <td>
+                    <a href="https://anime.bang-dream.com/yumemita/" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">TV 动画「バンドリ！ ゆめ∞みた」官网</a>
+                    CHARACTER ／ HOME 页面
+                  </td>
+                  <td>首页、人物页、剧情页</td>
+                </tr>
+                <tr>
+                  <th scope="row">剧照</th>
+                  <td>同上官网 STORY 页面（第 1—13 话场面写真）</td>
+                  <td>剧情页逐话配图</td>
+                </tr>
+                <tr>
+                  <th scope="row">乐队 LOGO / 成员设定</th>
+                  <td>
+                    <a href="https://bang-dream.com/artist/yumemita/" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">BanG Dream! 官方艺人页</a>
+                    与 CHARACTER 页面
+                  </td>
+                  <td>全站标识与人物文字</td>
+                </tr>
+                <tr>
+                  <th scope="row">文字资料</th>
+                  <td>
+                    <a href="https://zh.moegirl.org.cn/%E6%A2%A6%E9%99%90%E5%A4%A7MewType" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">萌娘百科「梦限大MewType」条目</a>
+                    （CC BY-NC-SA 3.0 CN，摘编并注明出处）
+                  </td>
+                  <td>首页「关于乐队」简介</td>
+                </tr>
+                <tr>
+                  <th scope="row">观后感配图</th>
+                  <td>作者本人从动画第 13 集截取的画面，整理于《想法.docx》并挑选入站</td>
+                  <td>作者感想页的文章头图与正文截图组</td>
+                </tr>
+                <tr>
+                  <th scope="row">活动情报</th>
+                  <td>
+                    <a href="https://bang-dream.com/events/?artist=yumemita" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">官方 Live•Event 列表</a>
+                    （依 2026 年 11 月页面整理）
+                  </td>
+                  <td>活动页时间轴与图片墙</td>
+                </tr>
+                <tr>
+                  <th scope="row">作品情报</th>
+                  <td>
+                    <a href="https://bang-dream.com/discographies/?artist=yumemita" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">官方 Discography</a>
+                  </td>
+                  <td>首页的发行信息与作品封面</td>
+                </tr>
+                <tr>
+                  <th scope="row">商品情报</th>
+                  <td>
+                    <a href="https://bushiroad-creative.com/" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">ブシロードクリエイティブ 商品情报页</a>
+                    与官方 BOOTH 店铺
+                  </td>
+                  <td>作品封面的资料来源</td>
+                </tr>
+                <tr>
+                  <th scope="row">字体</th>
+                  <td>思源黑体 Noto Sans SC（SIL Open Font License 1.1）；Anton（SIL OFL 1.1）</td>
+                  <td>全站正文与标题</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="quote-block mt-l" data-reveal>
+            <p style="font-size: 16px">
+              页面中的角色形象、影像、音乐与商品图片，版权归 <strong>©BanG Dream! Project</strong>、
+              株式会社ブシロード及其关联权利人所有。本页面依据官方公开资料整理，
+              用于《新生实践课》课程作业的学习与展示，<strong>不构成官方页面，也不用于任何商业用途</strong>。
+              如权利人认为使用不当，可随时删除相关内容。
+            </p>
+            <cite>— 版权声明</cite>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="返回首页">
+              <img class="brand__logo" src="assets/img/brand/logo-mewtype.png"
+                   alt="夢限大みゅーたいぷ 官方 LOGO" width="760" height="274" loading="lazy" />
+            </a>
+            <p>
+              本站为《新生实践课》课程作业，非官方网站。页面中的角色、影像与音乐版权归
+              ©BanG Dream! Project 及相关权利人所有，仅供学习交流使用。
+            </p>
+            <div class="sns">
+              <a href="https://space.bilibili.com/3546592848120041" target="_blank" rel="noopener noreferrer">bilibili 官方号</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>SITEMAP</h4>
+            <a href="index.html">首页</a>
+            <a href="story.html">动画剧情</a>
+            <a href="songs.html">歌曲</a>
+            <a href="characters.html">登场人物</a>
+            <a href="live.html">近期活动</a>
+            <a href="credits.html">制作者栏</a>
+          </div>
+          <div class="footer-col">
+            <h4>OFFICIAL</h4>
+            <a href="https://bang-dream.com/artist/yumemita/" target="_blank" rel="noopener noreferrer">官方艺人页</a>
+            <a href="https://anime.bang-dream.com/yumemita/" target="_blank" rel="noopener noreferrer">动画官网</a>
+            <a href="https://bang-dream.com/" target="_blank" rel="noopener noreferrer">BanG Dream! 官网</a>
+            <a href="credits.html#sources">素材来源与版权</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 梦限大MewType 粉丝向 ｜《新生实践课》课程作业 ｜ ©BanG Dream! Project</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="返回顶部">↑</button>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

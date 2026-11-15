@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>梦限大MewType 应援站 ｜ 夢限大みゅーたいぷ</title>
+    <meta
+      name="description"
+      content="《新生实践课》课程作业：梦限大MewType（夢限大みゅーたいぷ）非官方应援站。收录乐队介绍、TV动画《BanG Dream! ゆめ∞みた》剧情与人物、歌曲、近期活动、作者感想，以及制作者信息。"
+    />
+    <meta name="keywords" content="梦限大MewType,夢限大みゅーたいぷ,Yumemita,バンドリ,ゆめ∞みた,BanG Dream" />
+    <meta name="author" content="华中科技大学 新生实践课 课程作业" />
+    <meta property="og:title" content="梦限大MewType 应援站" />
+    <meta property="og:description" content="跨越梦与现实的命运共同体——五位少女的无限大宇宙。" />
+    <meta property="og:image" content="assets/img/brand/ogp.jpg" />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ================= 页头 ================= -->
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a class="brand" href="https://bang-dream.com/artist/yumemita/" target="_blank"
+           rel="noopener noreferrer" data-tip="跳转梦限大官方网站"
+           title="跳转梦限大官方网站" aria-label="跳转梦限大官方网站（新窗口打开）">
+          <img class="brand__logo" src="assets/img/brand/logo-mewtype.png"
+               alt="夢限大みゅーたいぷ 官方 LOGO" width="760" height="274" />
+        </a>
+        <nav class="nav" id="siteNav" aria-label="主导航">
+          <a class="nav__link is-active" href="index.html" aria-current="page">首页<span>HOME</span></a>
+                    <a class="nav__link" href="review.html">感想<span>REVIEW</span></a>
+          <a class="nav__link" href="story.html">剧情<span>STORY</span></a>
+          <a class="nav__link" href="songs.html">歌曲<span>SONG</span></a>
+          <a class="nav__link" href="characters.html">人物<span>MEMBER</span></a>
+          <a class="nav__link" href="live.html">活动<span>LIVE</span></a>
+          <a class="nav__link" href="credits.html">制作者<span>CREDIT</span></a>
+        </nav>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="打开导航菜单"
+        >
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================= 首屏 ================= -->
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="hero__grid"></div>
+          <div class="hero__bg-glow"></div>
+        </div>
+
+        <div class="hero__inner">
+          <div class="hero__copy">
+                        <h1 class="hero__logo-wrap" id="heroTitle">
+              <img class="hero__logo" src="assets/img/brand/logo-mewtype.png"
+                   alt="梦限大MewType（夢限大みゅーたいぷ）" width="760" height="274" />
+            </h1>
+            <div class="hero__tags">
+              <p class="hero__tag hero__tag--under"><b>2026 TV ANIME</b><img class="hero__tag-logo" src="assets/img/brand/logo-anime.png" alt="TV 动画《バンドリ！ ゆめ∞みた》" width="900" height="243" /></p>
+              <p class="hero__tag hero__tag--under hero__tag--plain"><span class="hero__tag-dot" aria-hidden="true"></span>粉丝向网站</p>
+            </div>
+            <div class="hero__meta">
+              <div><b>05</b><span>乐队成员</span></div>
+              <div><b>13</b><span>动画话数</span></div>
+              <div><b>40<small>+</small></b><span>音乐作品</span></div>
+              <div><b>07</b><span>2027 巡演场次</span></div>
+            </div>
+          </div>
+
+          <div class="hero__poster">
+            <div class="poster-stack">
+              <div class="poster-slide is-on" data-jp="キービジュアル 01" data-en="KEY VISUAL 01">
+                <img src="assets/img/hero/kv-01.jpg" alt="梦限大MewType 主视觉之一：五位成员在宇宙中演奏" width="1200" height="1750" />
+              </div>
+              <div class="poster-slide" data-jp="キービジュアル 02" data-en="KEY VISUAL 02">
+                <img src="assets/img/hero/kv-02.jpg" alt="梦限大MewType 主视觉之二" width="1200" height="1750" loading="lazy" />
+              </div>
+              <div class="poster-slide" data-jp="キービジュアル 03" data-en="KEY VISUAL 03">
+                <img src="assets/img/hero/kv-03.jpg" alt="梦限大MewType 主视觉之三" width="1200" height="1750" loading="lazy" />
+              </div>
+              <div class="poster-slide" data-jp="キービジュアル 04" data-en="KEY VISUAL 04">
+                <img src="assets/img/hero/kv-04.jpg" alt="梦限大MewType 主视觉之四" width="1200" height="1750" loading="lazy" />
+              </div>
+              <div class="poster-slide" data-jp="アニメキービジュアル" data-en="ANIME VISUAL">
+                <img src="assets/img/hero/kv-jack.jpg" alt="TV 动画《BanG Dream! ゆめ∞みた》主视觉" width="1200" height="1750" loading="lazy" />
+              </div>
+              <div class="poster-caption">
+                <span id="posterCapJp">キービジュアル 01</span>
+                <span id="posterCapEn">KEY VISUAL 01</span>
+              </div>
+            </div>
+            <div class="poster-dots" id="posterDots" role="group" aria-label="主视觉切换"></div>
+          </div>
+        </div>
+
+        <div class="scroll-hint" aria-hidden="true">SCROLL</div>
+      </section>
+
+      <!-- ================= 滚动字幕 ================= -->
+<div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <div class="ticker__group">
+            <span><b>夢限大みゅーたいぷ</b></span>
+            <span>YUMEMITA</span>
+            <span><b>音が止んでも、あらがえ</b></span>
+            <span>BANG DREAM! YUME∞MITA</span>
+            <span><b>夢と現実を飛び越える運命共同体</b></span>
+            <span>MUGENDAI MEWTYPE</span>
+          </div>
+          <div class="ticker__group">
+            <span><b>夢限大みゅーたいぷ</b></span>
+            <span>YUMEMITA</span>
+            <span><b>音が止んでも、あらがえ</b></span>
+            <span>BANG DREAM! YUME∞MITA</span>
+            <span><b>夢と現実を飛び越える運命共同体</b></span>
+            <span>MUGENDAI MEWTYPE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= 简介 ================= -->
+      <section class="section" aria-labelledby="introTitle">
+        <div class="wrap split">
+          <div data-reveal>
+            <p class="kicker">About the band</p>
+            <h2 id="introTitle" style="font-size: clamp(26px, 3.2vw, 40px)">
+              梦想没有上限，<br />
+              所以她们叫「<span class="grad-text">夢限大</span>」。
+            </h2>
+            <p class="lead mt-m">
+              梦限大MewType（夢限大みゅーたいぷ）是《BanG Dream!》企划旗下的虚拟主播乐队，
+              2023 年 11 月 9 日宣布正式展开活动，唱片公司为 Bushiroad Music。
+              乐队名取自日语「無限大」的谐音，招募时给出的定位是「虚拟系多才多艺乐队」，
+              五位角色既是企划的衍生角色，也各自经营直播与音乐活动。
+            </p>
+            <p class="lead">
+              编制上，贝斯与架子鼓的位置由 DJ 与 Mp（操作人）取代，合成器与伴奏交由 Mp 掌管。
+              歌曲多由社外创作者负责，编曲不必迁就节奏乐器的演奏，听感更接近 VOCALOID 与电波风；
+              歌词则大多围绕成员的「梦想」与「幻想」展开。
+            </p>
+            <p class="src-note">
+              以上简介摘编自
+              <a href="https://zh.moegirl.org.cn/%E6%A2%A6%E9%99%90%E5%A4%A7MewType" target="_blank" rel="noopener noreferrer">萌娘百科「梦限大MewType」</a>
+              （CC BY-NC-SA 3.0 CN），文字仅供课程作业学习使用。
+            </p>
+          </div>
+          <figure class="figure" data-reveal style="--d: 120ms">
+            <img
+              src="assets/img/brand/ogp.jpg"
+              alt="TV 动画《BanG Dream! ゆめ∞みた》官方主视觉：LOGO 与五位成员的群像"
+              width="1200"
+              height="630"
+              loading="lazy"
+            />
+            <figcaption>TV 动画《バンドリ！ ゆめ∞みた》官方主视觉（局部）／©BanG Dream! Project</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ================= 板块入口 ================= -->
+      <section class="section section--tight" aria-labelledby="navTitle" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Contents</p>
+              <h2 id="navTitle">六个板块，认识她们的六个入口</h2>
+            </div>
+            <p class="lead" data-reveal style="--d: 80ms">
+              从动画剧情到她们唱的歌，从五位成员到近期活动，还有我自己的观后感——想从哪里开始都可以。
+            </p>
+          </div>
+
+          <div class="entry-grid" data-reveal-group>
+            <a class="entry" href="story.html" data-reveal>
+              <span class="entry__no">01</span>
+              <h3>动画剧情<small>STORY</small></h3>
+              <p>《BanG Dream! ゆめ∞みた》全 13 话逐话梳理，以及主题曲与关键转折。</p>
+              <span class="entry__go">前往剧情</span>
+            </a>
+            <a class="entry" href="songs.html" data-reveal>
+              <span class="entry__no">02</span>
+              <h3>音乐歌曲<small>SONG</small></h3>
+              <p>OP、ED 与剧中的 LIVE——八首我最常循环的歌，配官方单曲封面。</p>
+              <span class="entry__go">前往歌曲</span>
+            </a>
+            <a class="entry" href="characters.html" data-reveal>
+              <span class="entry__no">03</span>
+              <h3>登场人物<small>MEMBER</small></h3>
+              <p>仲町阿拉蕾、宫永野乃花、峰月律、藤都子、千石由乃——五个人，五段过去。</p>
+              <span class="entry__go">前往人物</span>
+            </a>
+            <a class="entry" href="live.html" data-reveal>
+              <span class="entry__no">04</span>
+              <h3>近期活动<small>LIVE &amp; EVENT</small></h3>
+              <p>2026—2027 演出与发行时间轴，包含「YMMTric COUNTER POINT」巡演日程。</p>
+              <span class="entry__go">前往活动</span>
+            </a>
+            <a class="entry" href="review.html" data-reveal>
+              <span class="entry__no">05</span>
+              <h3>作者感想<small>REVIEW</small></h3>
+              <p>一个追番者的完整心路：从开播前的期待，到中段的失望，再到对角色的着迷。</p>
+              <span class="entry__go">前往感想</span>
+            </a>
+            <a class="entry" href="credits.html" data-reveal>
+              <span class="entry__no">06</span>
+              <h3>制作者栏<small>CREDIT</small></h3>
+              <p>本页面的制作者、制作工具、技术说明与素材来源。</p>
+              <span class="entry__go">前往制作者</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 成员 ================= -->
+      <section class="section" aria-labelledby="memberTitle" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Meet the members</p>
+              <h2 id="memberTitle">五个人，五种声音</h2>
+              <p>主唱、双吉他、键盘、DJ——她们都来自同一所学校：神田白八馬アカデミー。</p>
+            </div>
+            <a class="btn btn--ghost btn--sm" href="characters.html" data-reveal>全部人物介绍</a>
+          </div>
+
+          <div class="member-strip" data-reveal-group>
+            <a class="member-card" href="characters.html#arale" data-reveal style="--c: rgba(255, 152, 88, 0.4)">
+              <div class="member-card__img">
+                <img src="assets/img/char/arale-bust.webp" alt="仲町阿拉蕾 官方角色立绘" width="500" height="666" loading="lazy" />
+              </div>
+              <div class="member-card__body">
+                <span class="member-card__role">Vo.</span>
+                <p class="member-card__name">仲町 阿拉蕾</p>
+                <span class="member-card__en">NAKAMACHI ARALE</span>
+              </div>
+            </a>
+            <a class="member-card" href="characters.html#nonoka" data-reveal style="--c: rgba(120, 200, 255, 0.4)">
+              <div class="member-card__img">
+                <img src="assets/img/char/nonoka-bust.webp" alt="宫永野乃花 官方角色立绘" width="500" height="666" loading="lazy" />
+              </div>
+              <div class="member-card__body">
+                <span class="member-card__role">Gt.</span>
+                <p class="member-card__name">宫永 野乃花</p>
+                <span class="member-card__en">MIYANAGA NONOKA</span>
+              </div>
+            </a>
+            <a class="member-card" href="characters.html#ritsu" data-reveal style="--c: rgba(255, 111, 145, 0.4)">
+              <div class="member-card__img">
+                <img src="assets/img/char/ritsu-bust.webp" alt="峰月律 官方角色立绘" width="500" height="666" loading="lazy" />
+              </div>
+              <div class="member-card__body">
+                <span class="member-card__role">Gt.</span>
+                <p class="member-card__name">峰月 律</p>
+                <span class="member-card__en">MINETSUKI RITSU</span>
+              </div>
+            </a>
+            <a class="member-card" href="characters.html#miyako" data-reveal style="--c: rgba(180, 150, 255, 0.4)">
+              <div class="member-card__img">
+                <img src="assets/img/char/miyako-bust.webp" alt="藤都子 官方角色立绘" width="500" height="666" loading="lazy" />
+              </div>
+              <div class="member-card__body">
+                <span class="member-card__role">Key.</span>
+                <p class="member-card__name">藤 都子</p>
+                <span class="member-card__en">FUJI MIYAKO</span>
+              </div>
+            </a>
+            <a class="member-card" href="characters.html#yuno" data-reveal style="--c: rgba(255, 90, 110, 0.4)">
+              <div class="member-card__img">
+                <img src="assets/img/char/yuno-bust.webp" alt="千石由乃 官方角色立绘" width="500" height="666" loading="lazy" />
+              </div>
+              <div class="member-card__body">
+                <span class="member-card__role">DJ&amp;Mp.</span>
+                <p class="member-card__name">千石 由乃</p>
+                <span class="member-card__en">SENGOKU YUNO</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 最新消息 ================= -->
+      <section class="section" aria-labelledby="newsTitle" style="border-top: 1px solid var(--line)">
+        <div class="wrap split split--top">
+          <div>
+            <div data-reveal>
+              <p class="kicker">Latest news</p>
+              <h2 id="newsTitle" style="font-size: clamp(24px, 2.8vw, 34px)">最近发生的事</h2>
+            </div>
+            <div class="news-list mt-m" data-reveal-group>
+              <a class="news-item" href="live.html" data-reveal>
+                <span class="news-item__date">2027.01.27</span>
+                <span class="news-item__text">2nd Album「It's our choice」发行决定</span>
+                <span class="news-item__arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="news-item" href="live.html" data-reveal>
+                <span class="news-item__date">2027.01.31</span>
+                <span class="news-item__text">LIVE TOUR 2027「YMMTric COUNTER POINT」开演</span>
+                <span class="news-item__arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="news-item" href="live.html" data-reveal>
+                <span class="news-item__date">2026.12.16</span>
+                <span class="news-item__text">TV 动画 Blu-ray 上巻・下巻 同日发售</span>
+                <span class="news-item__arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="news-item" href="live.html" data-reveal>
+                <span class="news-item__date">2026.10.11</span>
+                <span class="news-item__text">BanG Dream! 13th☆LIVE DAY2「DIMENSIONAL OVERLAP」终了</span>
+                <span class="news-item__arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="news-item" href="live.html" data-reveal>
+                <span class="news-item__date">2026.10.01</span>
+                <span class="news-item__text">TV 动画《バンドリ！ ゆめ∞みた》2026 年 10 月起再放送</span>
+                <span class="news-item__arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div data-reveal style="--d: 120ms">
+            <p class="kicker">On air</p>
+            <h2 style="font-size: clamp(24px, 2.8vw, 34px)">动画放映情报</h2>
+            <div class="table-wrap mt-m">
+              <table class="data">
+                <tbody>
+                  <tr>
+                    <th>作品名</th>
+                    <td><strong>バンドリ！ ゆめ∞みた</strong></td>
+                  </tr>
+                  <tr>
+                    <th>放送</th>
+                    <td>2026 年 7 月 2 日起 ／ 全 13 话</td>
+                  </tr>
+                  <tr>
+                    <th>上映</th>
+                    <td>TOKYO MX 等 ／ 各配信平台同步</td>
+                  </tr>
+                  <tr>
+                    <th>再放送</th>
+                    <td>2026 年 10 月起</td>
+                  </tr>
+                  <tr>
+                    <th>动画制作</th>
+                    <td>ニチカライン</td>
+                  </tr>
+                  <tr>
+                    <th>主题曲</th>
+                    <td>「これはぼくたちの生存のあらすじ」／「うちゅうのふしぎ」</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <a class="btn btn--ghost btn--sm mt-m" href="story.html">看逐话剧情</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 音乐作品 ================= -->
+      <section class="section" aria-labelledby="musicTitle" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Discography</p>
+              <h2 id="musicTitle">从 1st Album 到 2nd Album</h2>
+              <p>2025 年 12 月的 1st Album「プログレス サイン」到 2027 年 1 月的 2nd Album「It's our choice」，两年间她们把「无限大」塞进了一张张 CD 里。</p>
+            </div>
+            <a class="btn btn--ghost btn--sm" href="live.html" data-reveal>全部发行记录</a>
+          </div>
+
+          <div class="rail" data-drag data-reveal>
+            <article class="product">
+              <div class="product__img">
+                <img src="assets/img/goods/cd-1st-album.png" alt="1st Album「プログレス サイン」封面" width="680" height="680" loading="lazy" />
+              </div>
+              <div class="product__body">
+                <span class="product__cat">1ST ALBUM</span>
+                <p class="product__name">プログレス サイン</p>
+                <span class="product__meta">2025.12.24 ／ CD</span>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__img">
+                <img src="assets/img/goods/cd-4th-single.jpg" alt="4th Single「超惑星Xへの旅」封面" width="680" height="680" loading="lazy" />
+              </div>
+              <div class="product__body">
+                <span class="product__cat">4TH SINGLE</span>
+                <p class="product__name">超惑星Xへの旅</p>
+                <span class="product__meta">2026.05.13 ／ CD</span>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__img">
+                <img src="assets/img/goods/cd-5th-single.jpg" alt="5th Single「これはぼくたちの生存のあらすじ」封面" width="680" height="680" loading="lazy" />
+              </div>
+              <div class="product__body">
+                <span class="product__cat">5TH SINGLE</span>
+                <p class="product__name">これはぼくたちの生存のあらすじ</p>
+                <span class="product__meta">2026.09.30 ／ 动画 OP</span>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__img product__img--tall">
+                <img src="assets/img/goods/cd-bd-upper.jpg" alt="TV 动画 Blu-ray 上巻封面" width="680" height="950" loading="lazy" />
+              </div>
+              <div class="product__body">
+                <span class="product__cat">BLU-RAY</span>
+                <p class="product__name">ゆめ∞みた Blu-ray 上巻</p>
+                <span class="product__meta">2026.12.16 ／ Blu-ray</span>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__img product__img--tall">
+                <img src="assets/img/goods/cd-bd-lower.jpg" alt="TV 动画 Blu-ray 下巻封面" width="680" height="950" loading="lazy" />
+              </div>
+              <div class="product__body">
+                <span class="product__cat">BLU-RAY</span>
+                <p class="product__name">ゆめ∞みた Blu-ray 下巻</p>
+                <span class="product__meta">2026.12.16 ／ Blu-ray</span>
+              </div>
+            </article>
+            <article class="product">
+              <div class="product__img">
+                <img src="assets/img/goods/cd-2nd-album.jpg" alt="2nd Album「It's our choice」封面" width="680" height="600" loading="lazy" />
+              </div>
+              <div class="product__body">
+                <span class="product__cat">2ND ALBUM</span>
+                <p class="product__name">It's our choice</p>
+                <span class="product__meta">2027.01.27 ／ CD</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- ================= 页尾 ================= -->
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="返回首页">
+              <img class="brand__logo" src="assets/img/brand/logo-mewtype.png"
+                   alt="夢限大みゅーたいぷ 官方 LOGO" width="760" height="274" loading="lazy" />
+            </a>
+            <p>
+              本站为《新生实践课》课程作业，非官方网站。页面中的角色、影像与音乐版权归
+              ©BanG Dream! Project 及相关权利人所有，仅供学习交流使用。
+            </p>
+            <div class="sns">
+              <a href="https://space.bilibili.com/3546592848120041" target="_blank" rel="noopener noreferrer">bilibili 官方号</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>SITEMAP</h4>
+            <a href="index.html">首页</a>
+            <a href="story.html">动画剧情</a>
+            <a href="songs.html">歌曲</a>
+            <a href="characters.html">登场人物</a>
+            <a href="live.html">近期活动</a>
+            <a href="review.html">作者感想</a>
+            <a href="credits.html">制作者栏</a>
+          </div>
+          <div class="footer-col">
+            <h4>OFFICIAL</h4>
+            <a href="https://bang-dream.com/artist/yumemita/" target="_blank" rel="noopener noreferrer">官方艺人页</a>
+            <a href="https://anime.bang-dream.com/yumemita/" target="_blank" rel="noopener noreferrer">动画官网</a>
+            <a href="https://bang-dream.com/" target="_blank" rel="noopener noreferrer">BanG Dream! 官网</a>
+            <a href="credits.html#sources">素材来源与版权</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 梦限大MewType 粉丝向 ｜《新生实践课》课程作业 ｜ ©BanG Dream! Project</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="返回顶部">↑</button>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

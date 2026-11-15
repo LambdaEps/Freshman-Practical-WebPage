@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>近期活动 ｜ 梦限大MewType 应援站</title>
+    <meta
+      name="description"
+      content="梦限大MewType 2026—2027 演出与发行时间轴：13th☆LIVE、LIVE TOUR 2027「YMMTric COUNTER POINT」、个人活动与单曲发行一览。"
+    />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header" id="siteHeader">
+      <div class="site-header__inner">
+        <a class="brand" href="https://bang-dream.com/artist/yumemita/" target="_blank"
+           rel="noopener noreferrer" data-tip="跳转梦限大官方网站"
+           title="跳转梦限大官方网站" aria-label="跳转梦限大官方网站（新窗口打开）">
+          <img class="brand__logo" src="assets/img/brand/logo-mewtype.png"
+               alt="夢限大みゅーたいぷ 官方 LOGO" width="760" height="274" />
+        </a>
+        <nav class="nav" id="siteNav" aria-label="主导航">
+          <a class="nav__link" href="index.html">首页<span>HOME</span></a>
+                    <a class="nav__link" href="review.html">感想<span>REVIEW</span></a>
+          <a class="nav__link" href="story.html">剧情<span>STORY</span></a>
+          <a class="nav__link" href="songs.html">歌曲<span>SONG</span></a>
+          <a class="nav__link" href="characters.html">人物<span>MEMBER</span></a>
+          <a class="nav__link is-active" href="live.html" aria-current="page">活动<span>LIVE</span></a>
+          <a class="nav__link" href="credits.html">制作者<span>CREDIT</span></a>
+        </nav>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="打开导航菜单">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="page-hero__bg" aria-hidden="true">
+          <img src="assets/img/hero/kv-04.jpg" alt="" width="1200" height="1750" />
+        </div>
+        <div class="wrap">
+          <nav class="breadcrumb" aria-label="面包屑导航">
+            <a href="index.html">首页</a><span>/</span>近期活动
+          </nav>
+          <span class="en">LIVE &amp; EVENT</span>
+          <h1>从 Zepp 到世界，她们的日程表还在变长</h1>
+          <p class="lead">
+            2026 年到 2027 年，梦限大MewType 的行程一路排到「YMMTric COUNTER POINT」巡演。
+            下面是按官方公告整理的演出、活动与发行时间轴。
+          </p>
+        </div>
+      </section>
+
+      <!-- 焦点 -->
+      <section class="section">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Pick up</p>
+              <h2>三件正在发生的事</h2>
+            </div>
+          </div>
+          <div class="feature-grid" data-reveal-group>
+            <article class="feature" data-reveal>
+              <img src="assets/img/live/ev-tour2027.jpg" alt="LIVE TOUR 2027「YMMTric COUNTER POINT」视觉" width="900" height="472" loading="lazy" />
+              <span class="badge badge--live">LIVE TOUR 2027</span>
+              <h3>YMMTric COUNTER POINT</h3>
+              <p>
+                2027 年 1 月 31 日开跑，横跨福冈、仙台、札幌、大阪、东京、名古屋共 7 场。
+                场地从 Zepp Fukuoka 一路到 Zepp DiverCity (TOKYO)。
+              </p>
+            </article>
+            <article class="feature" data-reveal style="--d: 90ms">
+              <img src="assets/img/live/ev-13thlive.jpg" alt="BanG Dream! 13th☆LIVE DAY2 视觉" width="900" height="472" loading="lazy" />
+              <span class="badge badge--live">2026.10.11 终了</span>
+              <h3>BanG Dream! 13th☆LIVE DAY2<br />「DIMENSIONAL OVERLAP」</h3>
+              <p>于东京ガーデンシアター举行，是本轮巡演前规模最大的一场单独公演。</p>
+            </article>
+            <article class="feature" data-reveal style="--d: 180ms">
+              <img src="assets/img/goods/cd-2nd-album.jpg" alt="2nd Album「It's our choice」封面" width="680" height="600" loading="lazy" />
+              <span class="badge badge--release">2027.01.27 RELEASE</span>
+              <h3>2nd Album「It's our choice」</h3>
+              <p>接在 1st Album「プログレス サイン」之后的第二张专辑，也是巡演前的最新作品。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 时间轴 -->
+      <section class="section" id="timeline" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Timeline</p>
+              <h2>活动与发行时间轴</h2>
+              <p>
+                共 <b>30+</b> 条记录，可按键筛选。资料整理自 BanG Dream! 官方 Live•Event 与 Discography 页面。
+              </p>
+            </div>
+          </div>
+
+          <div data-filter-group>
+            <div class="filter" role="group" aria-label="筛选活动类型">
+              <button type="button" data-filter="all" class="is-on" aria-pressed="true">全部</button>
+              <button type="button" data-filter="live" aria-pressed="false">LIVE 演出</button>
+              <button type="button" data-filter="event" aria-pressed="false">活动／企划</button>
+              <button type="button" data-filter="release" aria-pressed="false">发行</button>
+              <button type="button" data-filter="news" aria-pressed="false">通知</button>
+              <span class="chip" style="margin-left: auto">当前显示 <b id="filterCount">42</b> 条</span>
+            </div>
+
+            <div class="timeline">
+              <h3 class="tl-year">2027</h3>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">03.20<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">みやこのアトリエ（宫子的画室） <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">学校法人片柳学園 日本工学院専門学校 片柳記念ホール</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">03.25—26<small>THU—FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">LIVE TOUR 2027「YMMTric COUNTER POINT」名古屋公演 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Zepp Nagoya</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">03.04—05<small>THU—FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">LIVE TOUR 2027「YMMTric COUNTER POINT」大阪・東京公演 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Zepp Osaka Bayside／Zepp DiverCity (TOKYO)</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">02.20<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">LIVE TOUR 2027「YMMTric COUNTER POINT」札幌公演 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Zepp Sapporo</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">02.07<small>SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">LIVE TOUR 2027「YMMTric COUNTER POINT」仙台公演 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">仙台PIT</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">01.31<small>SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">LIVE TOUR 2027「YMMTric COUNTER POINT」福冈初日 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Zepp Fukuoka ／ 巡演开跑</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">01.27<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">2nd Album「It's our choice」 <span class="badge badge--release">CD</span></p>
+                  <span class="tl-item__meta">梦限大MewType 第二张专辑</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">01.23—24<small>SAT—SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">KIMCHIKURA×ANISAMA SEOUL 2027 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">
+                    BLUESQUARE Woori WON Banking Hall ／ 1.23 梦限大MewType、1.24 RAISE A SUILEN
+                  </span>
+                </div>
+              </div>
+
+              <h3 class="tl-year">2026</h3>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">12.24<small>THU</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">NAKAMACHI ARALE LIVE 2026「RESONEXT」 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">大手町三井ホール ／ 仲町阿拉蕾 个人公演</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">12.16<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">TV 动画 Blu-ray 上巻・下巻 <span class="badge badge--release">BLU-RAY</span></p>
+                  <span class="tl-item__meta">《バンドリ！ ゆめ∞みた》同日双卷发售</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">12.09<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">BanG Dream! 10th Anniversary LIVE Blu-ray <span class="badge badge--release">BLU-RAY</span></p>
+                  <span class="tl-item__meta">十周年纪念公演影像化</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">12.05<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">千石由乃主办 DJ 活动「YUNO's PARTY Lv.3」 <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">duo MUSIC EXCHANGE ／ 千石由乃 主办</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">11.21<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">集え！ゆめみた筋トレ部 ～輝け！上腕二頭筋～（集合！梦限大健身部 ～闪耀吧！肱二头肌～） <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">GARDEN 新木場 FACTORY</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">10.25<small>SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">Bushiroad Fashion Journey <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Shibuya Hikarie ／ 与 MyGO!!!!! 同台</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">10.11<small>SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">BanG Dream! 13th☆LIVE DAY2「DIMENSIONAL OVERLAP」 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">東京ガーデンシアター</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="news">
+                <div class="tl-item__date">10.01<small>THU</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">TV 动画 2026 年 10 月起再放送 <span class="badge badge--news">NEWS</span></p>
+                  <span class="tl-item__meta">动画官网公告</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">09.30<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">5th Single「これはぼくたちの生存のあらすじ」 <span class="badge badge--release">CD</span></p>
+                  <span class="tl-item__meta">动画 OP 主题曲 ／ 作词・作曲：田淵智也</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">09.28<small>MON</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「夢我夢中」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">音乐配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">09.25<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">免费 Live「新宿着陸計画（新宿着陆计划）」DAY2 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Zepp Shinjuku (TOKYO)</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">09.23<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「オリオンをなぞる (Cover)」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">音乐配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">09.19—10.04</div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">藤都子展～16歳～ <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">AKIHABARA ゲーマーズ本店／BanG Dream! STORE（池袋 PARCO）</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">09.17<small>THU</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「唱 (Cover)」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">音乐配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">09.15<small>TUE</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「にこいちミライ」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">音乐配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">09.11<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「愛は衝動」「in my words」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">同日双曲配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">09.05—06<small>SAT—SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">BM-ECHOES FESTIVAL 2026 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Zepp Osaka Bayside／Zepp Nagoya</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">08.28<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「夢はトゥルーエンド！」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">音乐配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">08.22<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">免费 Live「新宿着陸計画（新宿着陆计划）」DAY1 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">東急歌舞伎町タワーステージ</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">08.15—16</div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">コミックマーケット 108（Comic Market 108） <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">東京ビッグサイト 南 3 ホール No.2311</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">08.14<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「うちゅうのふしぎ」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">动画 ED 主题曲</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">08.08<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">KIMCHIKURA Fes '26 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">Seoul ／ 与 Morfonica 同台，千石由乃出演</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">08.07<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「一番のひかり」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">音乐配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">07.31<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「Face The Next」「TearJerker」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">同日双曲配信</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">07.10<small>FRI</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">仲町阿拉蕾「等身大あんりみてっと」配信 <span class="badge badge--release">DIGITAL</span></p>
+                  <span class="tl-item__meta">角色个人曲</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">07.04—05</div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">47 都道府县制覇之旅「スーパーポジション ～ゆめんそーれ沖縄～（Super Position ～冲绳～）」 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">沖縄県</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="news">
+                <div class="tl-item__date">07.02<small>THU</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">TV 动画《バンドリ！ ゆめ∞みた》开播 <span class="badge badge--news">NEWS</span></p>
+                  <span class="tl-item__meta">全 13 话 ／ 2026 年夏</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">06.21<small>SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">「スーパーポジション ～スピンアップ編～（Super Position ～升级篇～）」东京公演 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">SGC HALL ARIAKE ／ 同日发行「これはぼくたちの生存のあらすじ」</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">05.16—17</div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">マチ★アソビ vol.30（町★Asobi vol.30） <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">徳島県徳島市 新町橋東公園周辺</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">05.13<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">4th Single「超惑星Xへの旅」 <span class="badge badge--release">CD</span></p>
+                  <span class="tl-item__meta">第四张单曲</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="event">
+                <div class="tl-item__date">04.26<small>SUN</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">峰月律 Presents「もぐもぐPON☆パジャマぱ〜てぃ（嚼嚼 PON☆睡衣派对）」 <span class="badge badge--event">EVENT</span></p>
+                  <span class="tl-item__meta">LOFT/PLUSONE ／ 峰月律 主办</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">02.28<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">BanG Dream! 10th Anniversary LIVE「In the name of BanG Dream!」 <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">K アリーナ横浜 ／ 全 10 组艺人同台</span>
+                </div>
+              </div>
+              <div class="tl-item" data-cat="live">
+                <div class="tl-item__date">01.31<small>SAT</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">リスアニ！LIVE 2026（LisAni！LIVE 2026） <span class="badge badge--live">LIVE</span></p>
+                  <span class="tl-item__meta">幕張メッセ イベントホール ／ 1 月 31 日出演</span>
+                </div>
+              </div>
+
+              <h3 class="tl-year">2025</h3>
+              <div class="tl-item" data-cat="release">
+                <div class="tl-item__date">12.24<small>WED</small></div>
+                <div class="tl-item__body">
+                  <p class="tl-item__title">1st Album「プログレス サイン」 <span class="badge badge--release">CD</span></p>
+                  <span class="tl-item__meta">梦限大MewType 首张专辑</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="note mt-l" data-reveal>
+            <b>观看提示：</b>以上日程依官方公告整理，实际开演时间、会场与门票信息请以
+            <a href="https://bang-dream.com/events/?artist=yumemita" target="_blank" rel="noopener noreferrer" style="color: var(--pink)">官方 Live•Event 页面</a>
+            为淮。
+          </p>
+        </div>
+      </section>
+
+      <!-- 活动回顾 -->
+      <section class="section" style="border-top: 1px solid var(--line)">
+        <div class="wrap">
+          <div class="sec-head">
+            <div class="sec-head__main" data-reveal>
+              <p class="kicker">Snapshots</p>
+              <h2>视觉图展示</h2>
+              <p>官方发布的活动主视觉与现场图，取其中一部分。</p>
+            </div>
+          </div>
+          <div class="photo-grid" data-reveal-group>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-13thlive.jpg" alt="13th☆LIVE DAY2 活动视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2026.10.11</span>13th☆LIVE DAY2「DIMENSIONAL OVERLAP」</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-shinjuku.jpg" alt="新宿着陸計画（新宿着陆计划） 活动视觉" width="900" height="506" loading="lazy" />
+              <figcaption><span>2026.08.22 / 09.25</span>免费 Live「新宿着陸計画（新宿着陆计划）」</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-arale-live.jpg" alt="NAKAMACHI ARALE LIVE RESONEXT 视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2026.12.24</span>NAKAMACHI ARALE LIVE「RESONEXT」</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-yuno-party.jpg" alt="YUNO's PARTY Lv.3 视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2026.12.05</span>千石由乃主办 DJ 活动「YUNO's PARTY Lv.3」</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-miyako-expo.jpg" alt="藤都子展～16歳～ 视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2026.09.19—10.04</span>藤都子展～16歳～</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-kintorebu.jpg" alt="ゆめみた筋トレ部 活动视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2026.11.21</span>集え！ゆめみた筋トレ部</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-10th.jpg" alt="10th Anniversary LIVE 视觉" width="900" height="438" loading="lazy" />
+              <figcaption><span>2026.02.28</span>BanG Dream! 10th Anniversary LIVE</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-mogumogu.jpg" alt="もぐもぐPON 活动视觉" width="900" height="598" loading="lazy" />
+              <figcaption><span>2026.04.26</span>峰月律 Presents「もぐもぐPON☆パジャマぱ〜てぃ（嚼嚼 PON☆睡衣派对）」</figcaption>
+            </figure>            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-fashion.jpg" alt="Bushiroad Fashion Journey 活动视觉" width="900" height="506" loading="lazy" />
+              <figcaption><span>2026.10.25</span>Bushiroad Fashion Journey</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-echoes.jpg" alt="BM-ECHOES FESTIVAL 2026 活动视觉" width="900" height="506" loading="lazy" />
+              <figcaption><span>2026.09.05—06</span>BM-ECHOES FESTIVAL 2026</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-comiket.jpg" alt="コミックマーケット 108（Comic Market 108） 活动视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2026.08.15—16</span>コミックマーケット 108（Comic Market 108）</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-kimchikura.jpg" alt="KIMCHIKURA Fes '26 活动视觉" width="900" height="1272" loading="lazy" />
+              <figcaption><span>2026.08.08</span>KIMCHIKURA Fes '26（Seoul）</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-okinawa.jpg" alt="スーパーポジション 冲绳公演视觉" width="900" height="470" loading="lazy" />
+              <figcaption><span>2026.07.04—05</span>「スーパーポジション ～ゆめんそーれ沖縄～（Super Position ～冲绳～）」</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-machiasobi.jpg" alt="マチ★アソビ vol.30（町★Asobi vol.30） 活动视觉" width="636" height="712" loading="lazy" />
+              <figcaption><span>2026.05.16—17</span>マチ★アソビ vol.30（町★Asobi vol.30）（徳島）</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-seoul2027.jpg" alt="KIMCHIKURA×ANISAMA SEOUL 2027 视觉" width="768" height="1024" loading="lazy" />
+              <figcaption><span>2027.01.23—24</span>KIMCHIKURA×ANISAMA SEOUL 2027</figcaption>
+            </figure>
+            <figure class="photo" data-reveal>
+              <img src="assets/img/live/ev-atelier.jpg" alt="みやこのアトリエ（宫子的画室） 活动视觉" width="900" height="472" loading="lazy" />
+              <figcaption><span>2027.03.20</span>みやこのアトリエ（宫子的画室）</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+          </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a class="brand" href="index.html" aria-label="返回首页">
+              <img class="brand__logo" src="assets/img/brand/logo-mewtype.png"
+                   alt="夢限大みゅーたいぷ 官方 LOGO" width="760" height="274" loading="lazy" />
+            </a>
+            <p>
+              本站为《新生实践课》课程作业，非官方网站。页面中的角色、影像与音乐版权归
+              ©BanG Dream! Project 及相关权利人所有，仅供学习交流使用。
+            </p>
+            <div class="sns">
+              <a href="https://space.bilibili.com/3546592848120041" target="_blank" rel="noopener noreferrer">bilibili 官方号</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>SITEMAP</h4>
+            <a href="index.html">首页</a>
+            <a href="story.html">动画剧情</a>
+            <a href="songs.html">歌曲</a>
+            <a href="characters.html">登场人物</a>
+            <a href="live.html">近期活动</a>
+            <a href="credits.html">制作者栏</a>
+          </div>
+          <div class="footer-col">
+            <h4>OFFICIAL</h4>
+            <a href="https://bang-dream.com/artist/yumemita/" target="_blank" rel="noopener noreferrer">官方艺人页</a>
+            <a href="https://anime.bang-dream.com/yumemita/" target="_blank" rel="noopener noreferrer">动画官网</a>
+            <a href="https://bang-dream.com/" target="_blank" rel="noopener noreferrer">BanG Dream! 官网</a>
+            <a href="credits.html#sources">素材来源与版权</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 梦限大MewType 粉丝向 ｜《新生实践课》课程作业 ｜ ©BanG Dream! Project</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="返回顶部">↑</button>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
